@@ -1,0 +1,19 @@
+<view class="page-container">
+    <tab-bar tabIndex="1"></tab-bar>
+    <view class="test-empty" style="display:{{list.length?'none':'block'}}">
+        发现栏目正在加紧整理中...，敬请期待！~
+    </view>
+    <view class="page-content">
+        <view class="content-item" data-src="https://article.foodiu.cn/home?id={{item.id}}" data-title="{{item.title}}" tt:for="{{list}}"   bindtap="reviewArticle">
+            <view class="logo"  style="background:url('{{item.imgUrl}}') no-repeat center/cover"></view>
+            <view class="detail">
+                <view class="detail-info">
+                    <view class="title">
+                        {{item.title}}
+                    </view>
+                </view>
+                <view class="detail-btn">查看详情</view>
+            </view>
+        </view>
+    </view>
+</view>

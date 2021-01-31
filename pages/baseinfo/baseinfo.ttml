@@ -1,0 +1,60 @@
+<view class="page-container">
+    <view class="xyh-invoice-form">
+        <view class="xyh-form-module">
+            <view class="xyh-form-title">名称</view>
+            <view class="xyh-form-box">
+                <view class="wrap">
+                    <input type="text" placeholder="请输入名称"  bindinput="handleNameInput"  placeholder-style="font-size:12px;color:#B3B3B3;line-height: 60rpx;" />
+                </view>
+            </view>
+        </view>
+        <view class="xyh-form-module">
+            <view class="xyh-form-title">性别</view>
+            <view class="xyh-form-panel">
+                <view class="xyh-form-radio {{form.sex===1?'active':''}}" bindtap="changeSex" data-sex="1">
+                    <view class="icon"></view>
+                    <view class="type">男</view>
+                </view>
+                <view class="xyh-form-radio {{form.sex===0?'active':''}}" data-sex="0" bindtap="changeSex">
+                    <view class="icon"></view>
+                    <view class="type">女</view>
+                </view>
+            </view>
+        </view>
+        <view class="xyh-form-module">
+            <view class="xyh-form-title">电话</view>
+            <view class="xyh-form-box">
+                <view class="wrap">
+                    <input type="text" placeholder="请输入您的手机号"  bindinput="handlePhoneInput"  placeholder-style="font-size:12px;color:#B3B3B3;line-height: 60rpx;" />
+                </view>
+            </view>
+        </view>
+        <view class="xyh-form-module">
+            <view class="xyh-form-title">生日</view>
+            <view class="xyh-form-box">
+                <picker
+                        mode="date"
+                        value="{{date}}"
+                        start="1900-09-01"
+                        end="2020-09-01"
+                        bindchange="bindDateChange"
+                >
+                    <view class="wrap">
+                        <view class="picker {{form.birthday?'':'date'}}"> {{form.birthday?form.birthday:'请选择您的生日'}} </view>
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="xyh-form-module">
+            <view class="xyh-form-title">邮箱</view>
+            <view class="xyh-form-box">
+                <view class="wrap">
+                    <input type="text" placeholder="请输入您的邮箱"  bindinput="handleEmailInput" placeholder-style="font-size:12px;color:#B3B3B3;line-height: 60rpx;" />
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="jd_order_submit"   bindtap="beginTest">
+        开始内容
+    </view>
+</view>

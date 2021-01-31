@@ -1,0 +1,14 @@
+<view class="tab-container">
+    <view class="tab-item home {{tabIndex==0?'active':''}}">
+        <view class="icon" bindtap="tabTo" data-index="0"></view>
+        <text class="title">首页</text>
+    </view>
+    <view class="tab-item discover {{tabIndex==1?'active':''}}" bindtap="tabTo" data-index="1">
+        <view class="icon"></view>
+        <text class="title">发现</text>
+    </view>
+    <view class="tab-item personal {{tabIndex==2?'active':''}}" bindtap="tabTo" data-index="2">
+        <view class="icon"></view>
+        <text class="title">个人中心</text>
+    </view>
+</view>

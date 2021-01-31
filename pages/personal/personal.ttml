@@ -1,0 +1,33 @@
+<view class="page-container">
+    <!--<view class="jd_order_tab">
+        <view class="order-item active">全部</view>
+        <view class="order-item">待付款</view>
+        <view class="order-item">待内容</view>
+        <view class="order-item">内容完成</view>
+    </view>-->
+    <view class="order_list">
+        <view class="jd_order_item"  tt:for="{{contentList}}" >
+            <view class="order-id">
+                <view class="id-num" style="visibility: {{item.userPhone?'unset':'hidden'}}">手机号:{{item.userPhone}}</view>
+                <view class="order-state">{{item.orderDes}}</view>
+            </view>
+            <view class="order-content">
+                <view class="logo" style="background:url('{{item.paperInfoImg}}') no-repeat center/cover"></view>
+                <view class="order-detail">
+                    <view class="title">{{item.paperInfoName}}</view>
+                    <view class="des">{{item.paperTypeName+'-'+item.paperInfoName+'-'+item.paperInfoDesc}}</view>
+                </view>
+                <view class="order-price">￥-{{item.money}}</view>
+                <view class="order-num">x1</view>
+            </view>
+            <view class="handle-bar">
+                <view class="order-time">下单时间：{{item.createTime}}</view>
+                <view class="order-time">支付时间：{{item.payTime}}</view>
+                <view class="order-btn">
+                    <view class="btn-item" data-paper="{{item.paperId}}" data-status="{{item.allStatus}}" data-id="{{item.id}}" data-user="{{item.userId}}"  bindtap="checkStatus">{{item.statusBtn}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <tab-bar tabIndex="2"></tab-bar>
+</view>

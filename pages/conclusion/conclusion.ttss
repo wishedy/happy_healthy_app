@@ -1,0 +1,31 @@
+@import "../../styles/common.ttss";
+.page-container{padding-bottom:30px}
+.page-container{
+  background: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+.page-conclusion,.page-empty{
+  display: none;
+}
+.autoResule .page-conclusion{
+    display: block;
+}
+.noAutoResule .page-empty{
+    display: block;
+}
+.page-container .page-content,.page-container .page-empty{
+  color: #5c5b5b;
+  font-size:18px;
+  padding: 30px;
+}
+.page-container .page-content .label{
+  color: #333;
+  font-size: 20px;
+  display: inline-block;
+}
+.page-container .page-content {
+  padding-bottom: unset;
+}
+.jd_order_submit{line-height:100rpx;text-align:center;color:#fff;background:#55c47d;height:100rpx;box-shadow:-1rpx 8rpx 1rpx 0rpx rgba(161,161,161,0.06);display:flex;flex-direction:row;align-items:center;justify-content:center;position:fixed;bottom:0;left:0;right:0}
+

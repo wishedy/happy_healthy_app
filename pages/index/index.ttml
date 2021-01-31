@@ -1,0 +1,34 @@
+<view class="page-container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" vertical="{{vertical}}" duration="{{duration}}" class="{{banner.length?'have':'none'}}">
+        <block tt:for="{{banner}}">
+            <swiper-item>
+                <view class="swiper-item" style="background:url('{{item.imgUrl}}') no-repeat center/cover"></view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="tab-list">
+        <view class="mask" style="display: {{onOff?'block':'none'}}">  您好!选项栏栏可以左右滑动 </view>
+        <view class="tab-wrapper" style="width:{{100*(len+1)}}px;">
+            <view tt:for="{{typeList}}" data-index="{{index}}" class="tab-item {{index==tabIndex?'active':''}}"  bindtap="changeIndex">
+                {{item.typeName}}
+            </view>
+        </view>
+    </view>
+    <view class="test-content">
+        <view class="test-item" bindtap="reviewInfo" tt:for="{{contentList}}" data-id="{{item.id}}">
+            <view class="logo" style="background:url('{{item.imgUrl}}') no-repeat center/cover"></view>
+            <view class="title">{{item.names}}</view>
+            <view class="handle">
+                <view class="price">
+                    <view class="icon"></view>
+                    ￥-{{item.showPrice}}/次
+                </view>
+                <view class="focus">查看</view>
+            </view>
+        </view>
+        <view class="test-empty" style="display:{{contentList.length?'none':'block'}}">
+            该类型下的内容题正在整理中...
+        </view>
+    </view>
+    <tab-bar tabIndex="0"></tab-bar>
+</view>

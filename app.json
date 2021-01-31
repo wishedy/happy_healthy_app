@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/discover/discover",
+    "pages/baseinfo/baseinfo",
+    "pages/testDetail/testDetail",
+    "pages/conclusion/conclusion",
+    "pages/article/article",
+    "pages/testPage/testPage",
+    "pages/personal/personal"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "美满健康",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../styles/common.ttss";
+.page-content{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100rpx;
+}
+.test-empty{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    line-height: 300px;
+}
+.page-content .content-item{
+    height: 480rpx;
+    margin-bottom: 20rpx;
+}
+.page-content .content-item .logo{
+    height: 340rpx;
+    background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598620613629&di=e8efcbcd52d6de3c57efc01da181fc12&imgtype=0&src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F6072490141%2F0") no-repeat center/cover;
+
+}
+.page-content .content-item .detail{
+    height: 130rpx;
+    background: #fff;
+    padding: 0 26rpx 0 21rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-content .content-item .detail-btn{
+    width: 200rpx;
+    height: 72rpx;
+    background: linear-gradient(90deg, #34DA8A, #12CA8A);
+    border-radius: 36rpx;
+    text-align: center;
+    line-height: 72rpx;
+    font-size: 30rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.page-content .content-item .detail-info{
+    width: 394rpx;
+    height: 73rpx;
+    font-size: 28rpx;
+    font-family: SourceHanSansCN;
+    font-weight: 400;
+    color: #343434;
+    line-height: 32rpx;
+}

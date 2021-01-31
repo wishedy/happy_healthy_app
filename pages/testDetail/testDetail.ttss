@@ -1,0 +1,15 @@
+@import "../../styles/common.ttss";
+.page-container{padding-bottom:30px}
+.page-container .xyh-product-banner{width:337px;height:384px;background:white;box-shadow:0px 2px 48px 0px rgba(217,215,215,0.26);border-radius:4px;padding:23px 19px 19px 19px}
+.page-container .xyh-product-banner .logo{width:337px;height:308px;margin:0 auto 17px auto;background:#00acff}
+.page-container .xyh-product-banner .title{height:25px;font-size:18px;font-family:PingFangSC-Semibold,PingFang SC;font-weight:600;color:#636363;line-height:25px;margin-bottom:10px}
+.page-container .xyh-product-banner .wrap{height:24px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start}
+.page-container .xyh-product-banner .wrap .label{padding:0 9px;height:24px;border-radius:1px;text-align:center;line-height:24px}
+.page-container .xyh-product-banner .wrap .label.sign{border:1px solid #FF8989;color:#FF8989;margin-right:10px}
+.page-container .xyh-product-banner .wrap .label.type{border:1px solid #43aafe;color:#43aafe}
+.page-container .describe{width:339px;min-height:80px;font-size:14px;font-family:PingFangSC-Regular,PingFang SC;font-weight:400;color:#b0b0b0;line-height:20px;margin:16px auto 33px auto}
+
+.jd_order_submit{height:100rpx;background:white;box-shadow:-1rpx 8rpx 1rpx 0rpx rgba(161,161,161,0.06);display:flex;flex-direction:row;align-items:center;justify-content:center;position:fixed;bottom:0;left:0;right:0}
+.jd_order_submit .sum{margin-left:40rpx;font-size:38rpx;font-family:SourceHanSansCN;font-weight:500;color:#333333;display:flex;flex-direction:row;align-items:center;justify-content:center;width:449rpx;height:100%}
+.jd_order_submit .sum .money{font-style:normal;color:#E71A27;margin-right:42rpx}
+.jd_order_submit .buy-ok{width:301rpx;height:100rpx;line-height:100rpx;text-align:center;color:#fff;background:#55c47d}

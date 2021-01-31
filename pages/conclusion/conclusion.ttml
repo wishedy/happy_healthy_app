@@ -1,0 +1,14 @@
+<view class="page-container {{autoResule?'autoResule':'noAutoResule'}}">
+    <view class="page-conclusion">
+        <view class="page-content"><view class="label">{{name}}</view>，您好：,您刚刚做的<view class="label">{{content.names+'('+content.describes+')'}}</view>,对您的初步测评结论如下。</view>
+        <view class="page-content">得分：<view class="label">{{garde}}分</view></view>
+        <view class="page-content">评测描述：<view class="label">{{describes}}</view></view>
+        <view class="page-content">评测结论：<view class="label">{{results}}</view></view>
+    </view>
+    <view class="page-empty">
+        您的内容结论将会在2~3个工作日内测评结束，并以邮件的形式发送到您的电子信箱，请耐心等待，如有疑问，请联系医生，谢谢！
+    </view>
+    <view class="jd_order_submit"   bindtap="linkDoctor">
+        联系医生
+    </view>
+</view>

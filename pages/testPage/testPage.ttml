@@ -1,0 +1,27 @@
+<view class="page-container">
+    <view class="test-container">
+        <view class="test-title">{{testIndex+1}}. {{content.title}}</view>
+        <view class="test-image" style="display:none;">
+            <image class="image aspect-fit"  mode="aspectFill" src="{{url}}" />
+        </view>
+        <view class="choice-container {{content.types==1||content.types==2?'showChoice':''}}">
+            <view class="choice-item {{item.isChoice==1?'active':''}}" tt:for="{{content.optionInfoList}}"  bindtap="answerTest" data-id="{{item.id}}">
+                <view class="icon">{{item.label}}</view>
+                <view class="choice-content">{{item.contents}}</view>
+            </view>
+        </view>
+        <view class="choice-container choice-textarea {{content.types!=1&&content.types!=2?'showDescribe':''}}">
+            <view class="xyh-form-box describe">
+                <view class="wrap">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="请输入您的答案" placeholder-style="font-size:12px;color:#B3B3B3;line-height: 60rpx;" v-model="formInline.remark"   bindinput="handleAnswerInput"></textarea>
+                </view>
+            </view>
+        </view>
+    </view>
+<!--
+    {{resultData}}{{(testIndex+1)}}{{list.length}}{{userId}}{{orderId}}{{paperId}}
+-->
+    <view class="jd_order_submit"   bindtap="nextTest">
+        {{(testIndex+1)==list.length?'提交答案':'下一题'}}
+    </view>
+</view>

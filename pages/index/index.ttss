@@ -1,0 +1,183 @@
+@import "../../styles/common.ttss";
+.none{
+  display: none;
+}
+.have{
+  display: block;
+}
+.swiper-item{
+  width: 100%;
+  height: 340rpx;
+}
+.demo-text-2{
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598620543370&di=67a28ce6d69d373e81e23d5346b63cc9&imgtype=0&src=http%3A%2F%2Fp3.pstatp.com%2Flarge%2Fpgc-image%2F15320483590592a134bbb9b.jpg") no-repeat center/cover;
+}
+.demo-text-1{
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598620613629&di=e8efcbcd52d6de3c57efc01da181fc12&imgtype=0&src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F6072490141%2F0") no-repeat center/cover;
+}
+.demo-text-3{
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598620595440&di=839a6cdf76155b1f44ffe192e3b86b39&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181114%2F752b15eb3ea24ce8acaf3cadd2f0e14b.jpeg") no-repeat center/cover;
+}
+.test-empty{
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  line-height: 300px;
+}
+.tab-list{
+  padding: 0 27rpx;
+  /*display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;*/
+  height: 100rpx;
+  overflow-y: scroll;
+  background: #FFFFFF;
+  border-bottom:1rpx solid #E5E5E5;
+  position: relative;
+}
+.tab-list .tab-wrapper{
+  height: 100%;
+  clear: both;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tab-list .mask{
+  position: absolute;
+  left: 0;
+  right:0;
+  top:0;
+  bottom:0;
+  display: flex;
+  line-height: 100rpx;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(0,0,0,.7);
+  z-index: 2;
+}
+.tab-list .tab-item{
+  margin-right: 10rpx;
+  float: left;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  width: 200rpx;
+  overflow-x: hidden;
+  text-align: center;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #666666;
+  transition: all .5s ease;
+}
+.tab-list .tab-item.active{
+  font-size: 34rpx;
+  font-family: PangMenZhengDao;
+  font-weight: 400;
+  color: #343434;
+  height: 100rpx;
+  width: 220rpx;
+  position: relative;
+}
+.tab-list .tab-item.active::after{
+  content: " ";
+  transition: all .5s ease;
+
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  bottom:12rpx;
+  height: 6rpx;
+  background: linear-gradient(90deg, #34DA8A, #12CA8A);
+  border-radius: 2rpx;
+  transform: translateX(-50%);
+}
+.test-content{
+  padding: 0 24rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+.test-content .test-item{
+  width: 339rpx;
+  height: 518rpx;
+  background: #FFFFFF;
+  border-radius: 12rpx;
+  margin-top: 20rpx;
+}
+.test-content .test-item .logo{
+  width: 100%;
+  height: 339rpx;
+  border-radius: 12rpx 12rpx 0rpx 0rpx;
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598620595440&di=839a6cdf76155b1f44ffe192e3b86b39&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181114%2F752b15eb3ea24ce8acaf3cadd2f0e14b.jpeg") no-repeat center/cover;
+}
+.test-content .test-item .title{
+  margin-top: 14rpx;
+  margin-left: 12rpx;
+  width: 315rpx;
+  font-size: 30rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #343434;
+  line-height: 45rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 90rpx;
+}
+.test-content .test-item .handle{
+  margin-left: 12rpx;
+  margin-top: 14rpx;
+  height: 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 14rpx;
+}
+.test-content .test-item .handle .price{
+
+  font-size: 26rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #9A9A9A;
+  line-height: 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.test-content .test-item .handle .price .icon{
+  width: 22rpx;
+  height: 22rpx;
+  background: url("https://jyxb-common-1252525514.cos.ap-shanghai.myqcloud.com/3aecb61ebbd6169979f1b1c63784e3f1.png") no-repeat center/cover;
+  margin-right: 2rpx;
+}
+.test-content .test-item .handle .focus{
+
+  width: 72rpx;
+  height: 32rpx;
+  background: linear-gradient(0deg, #34DA8A 0%, #12CA8A 100%);
+  border-radius: 16rpx;
+
+  font-size: 19rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 32rpx;
+  text-align: center;
+}

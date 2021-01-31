@@ -1,0 +1,20 @@
+<view class="page-container">
+    <view class="xyh-product-banner">
+        <view class="logo" style="  background: url('{{content.imgUrl}}') no-repeat center/cover;
+        "></view>
+        <view class="title" v-text="typeNames"></view>
+        <view class="wrap">
+            <view class="label sign">热门</view>
+            <view class="label type">推荐</view>
+        </view>
+    </view>
+    <view class="describe">{{content.names+'-'+content.describes}}</view>
+    <!--<view style="font-size: 10px;display: block;">userId:{{userId}}</view><br/>
+    <view style="font-size: 10px;display: block;">testId:{{testId}}</view><br/>
+    <view style="font-size: 10px;display: block;">orderId:{{orderId}}</view><br/>
+    <view style="font-size: 10px;display: block;">支付获取到的信息:{{payInfo}}</view><br/>-->
+    <view class="jd_order_submit">
+        <view class="sum">合计：<view class="money">￥-{{content.showPrice}}</view></view>
+        <view class="buy-ok"  bindtap="payTest">查看详情</view>
+    </view>
+</view>

@@ -1,0 +1,84 @@
+{
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "tt5e9b2826c1a0c262",
+	"projectname": "美满健康",
+	"condition": {
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": 0,
+					"name": "发现页",
+					"pathName": "pages/discover/discover",
+					"query": "",
+					"scene": null,
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				},
+				{
+					"id": 1,
+					"name": "个人中心",
+					"pathName": "pages/personal/personal",
+					"query": "",
+					"scene": null,
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				},
+				{
+					"id": 2,
+					"name": "基本信息",
+					"pathName": "pages/baseinfo/baseinfo",
+					"query": "",
+					"scene": null,
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				},
+				{
+					"id": 3,
+					"name": "内容简介",
+					"pathName": "pages/testDetail/testDetail",
+					"query": "",
+					"scene": null,
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				},
+				{
+					"id": 4,
+					"name": "内容页面",
+					"pathName": "pages/testPage/testPage",
+					"query": "testId=907fdc36-f234-4bcc-ba71-a0de3ac7d3af&userId=770594468616208384&orderId=d352c61ece094b13bb7d8dc6fe1da3c2",
+					"scene": "011001",
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				},
+				{
+					"id": 5,
+					"name": "内容结论",
+					"pathName": "pages/conclusion/conclusion",
+					"query": "",
+					"scene": "011001",
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				}
+			]
+		}
+	}
+}
