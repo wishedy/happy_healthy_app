@@ -19,7 +19,7 @@ Page({
             date: e.detail.value,
         });
     },
-    payTest(){
+    async payTest(){
         const _this = this
         const payFunc = async ()=>{
             const beginOrder = async ()=>{
@@ -202,39 +202,54 @@ Page({
                 beginOrder()
             }
         }
-        tt.getSystemInfo({
-            success(res){
-                if(res.platform.indexOf('ios')!==-1){
-                    tt.showModal({
-                        title: "IOS系统暂不支持",
-                        content: "IOS系统暂不支持支付功能，敬请期待",
-                        success(res) {
-                            if (res.confirm) {
-                                console.log("confirm, continued");
-                                tt.redirectTo({
-                                    url:'/pages/index/index'
-                                })
-                            } else if (res.cancel) {
-                                tt.redirectTo({
-                                    url:'/pages/index/index'
-                                })
-                            } else {
-                                // what happend?
-                            }
-                        },
-                        fail(err) {
-                            console.log(`showModal 调用失败`, err);
-                        },
-                    });
-                }else{
-                    payFunc()
-                }
-            },
-            fail(){
-                tt.showToast({title:'系统错误',icon:'fail'})
+        if(parseInt(_this.data.content.isCharge,10)!==1){
+            tt.getSystemInfo({
+                success(res){
+                    if(res.platform.indexOf('ios')!==-1){
+                        tt.showModal({
+                            title: "IOS系统暂不支持",
+                            content: "IOS系统暂不支持支付功能，敬请期待",
+                            success(res) {
+                                if (res.confirm) {
+                                    console.log("confirm, continued");
+                                    tt.redirectTo({
+                                        url:'/pages/index/index'
+                                    })
+                                } else if (res.cancel) {
+                                    tt.redirectTo({
+                                        url:'/pages/index/index'
+                                    })
+                                } else {
+                                    // what happend?
+                                }
+                            },
+                            fail(err) {
+                                console.log(`showModal 调用失败`, err);
+                            },
+                        });
+                    }else{
+                        payFunc()
+                    }
+                },
+                fail(){
+                    tt.showToast({title:'系统错误',icon:'fail'})
 
-            }
-        })
+                }
+            })
+        }else{
+            //免费的逻辑
+            const res = await addOrder({
+                userId:_this.data.userId,
+                paperId:_this.data.testId
+            })
+            _this.setData({
+                orderId:res.id
+            },()=>{
+                tt.redirectTo({
+                    url:'/pages/baseinfo/baseinfo?testId='+_this.data.testId+'&orderId='+_this.data.orderId+'&userId='+_this.data.userId
+                })
+            })
+        }
 
 
     },

@@ -14,7 +14,7 @@
     <view style="font-size: 10px;display: block;">orderId:{{orderId}}</view><br/>
     <view style="font-size: 10px;display: block;">支付获取到的信息:{{payInfo}}</view><br/>-->
     <view class="jd_order_submit">
-        <view class="sum">合计：<view class="money">￥-{{content.showPrice}}</view></view>
-        <view class="buy-ok"  bindtap="payTest">查看详情</view>
+        <view class="sum {{content.isCharge==1?'none':''}}">合计：<view class="money">￥-{{content.showPrice}}</view></view>
+        <view class="buy-ok  {{content.isCharge==1?'buy-btn':''}}"  bindtap="payTest">查看详情</view>
     </view>
 </view>

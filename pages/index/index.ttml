@@ -19,7 +19,7 @@
             <view class="logo" style="background:url('{{item.imgUrl}}') no-repeat center/cover"></view>
             <view class="title">{{item.names}}</view>
             <view class="handle">
-                <view class="price">
+                <view class="price  {{item.isCharge==1?'none':''}}">
                     <view class="icon"></view>
                     ￥-{{item.showPrice}}/次
                 </view>

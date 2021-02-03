@@ -167,6 +167,9 @@
   background: url("https://jyxb-common-1252525514.cos.ap-shanghai.myqcloud.com/3aecb61ebbd6169979f1b1c63784e3f1.png") no-repeat center/cover;
   margin-right: 2rpx;
 }
+.none{
+  display: none !important;
+}
 .test-content .test-item .handle .focus{
 
   width: 72rpx;
