@@ -62,6 +62,24 @@
   background: rgba(0,0,0,.7);
   z-index: 2;
 }
+.tab-list .title{
+  position: absolute;
+  left: 0;
+  right:0;
+  top:-30px;
+  bottom:0;
+  font-size:14px;
+  font-weight:bold;
+  text-indent: 10px;
+  display: flex;
+  line-height: 50rpx;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #bc4e24;
+  z-index: 2;
+}
 .tab-list .tab-item{
   margin-right: 10rpx;
   float: left;

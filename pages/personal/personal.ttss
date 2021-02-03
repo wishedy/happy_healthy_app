@@ -22,3 +22,9 @@
 .jd_order_item .handle-bar .order-btn{height:55rpx;margin-right:31rpx;display:flex;flex-direction:row;align-items:center;justify-content:space-around}
 .jd_order_item .handle-bar .order-btn .btn-item{width:144rpx;height:56rpx;border:2rpx solid #999999;border-radius:27rpx;font-size:24rpx;font-family:SourceHanSansCN;font-weight:500;color:#999999;line-height:56rpx;text-align:center;margin-right:11rpx}
 /*单一订单样式-结束*/
+.none{
+    display: none !important;
+}
+.btn-item{
+    margin-left: 10px;
+}

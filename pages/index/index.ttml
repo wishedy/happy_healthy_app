@@ -7,6 +7,7 @@
         </block>
     </swiper>
     <view class="tab-list">
+        <view class="title">该小程序内容仅供娱乐</view>
         <view class="mask" style="display: {{onOff?'block':'none'}}">  您好!选项栏栏可以左右滑动 </view>
         <view class="tab-wrapper" style="width:{{100*(len+1)}}px;">
             <view tt:for="{{typeList}}" data-index="{{index}}" class="tab-item {{index==tabIndex?'active':''}}"  bindtap="changeIndex">

@@ -246,6 +246,8 @@ Page({
         const paperId =  event.currentTarget.dataset.paper
         const userId =  event.currentTarget.dataset.user
         const orderId =  event.currentTarget.dataset.id
+        const isCharge =  event.currentTarget.dataset.ischarge
+        console.log(JSON.stringify(event.currentTarget.dataset))
         switch (status) {
             case 0:
                 /*tt.redirectTo({
@@ -254,7 +256,13 @@ Page({
                 _this.setData({
                     orderId:orderId,
                 },()=>{
-                    _this.payTest()
+                    if(parseInt(isCharge,10)!==1){
+                        _this.payTest()
+                    }else{
+                        tt.redirectTo({
+                            url:'/pages/baseinfo/baseinfo?testId='+_this.data.testId+'&orderId='+orderId+'&userId='+userId
+                        })
+                    }
                 })
                 break
             case 1:
