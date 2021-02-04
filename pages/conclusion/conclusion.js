@@ -40,7 +40,7 @@ Page({
   },
   linkDoctor(){
     tt.showModal({
-      title: "谌医生联系方式如下",
+      title: "联系方式如下",
       content: "18745958599",
       success(res) {
         if (res.confirm) {

@@ -6,9 +6,9 @@
         <view class="page-content">评测结论：<view class="label">{{results}}</view></view>
     </view>
     <view class="page-empty">
-        您的内容结论将会在2~3个工作日内测评结束，并以邮件的形式发送到您的电子信箱，请耐心等待，如有疑问，请联系医生，谢谢！
+        您的内容结论将会在2~3个工作日内测评结束，并以邮件的形式发送到您的电子信箱，请耐心等待，如有疑问，请联系客服，谢谢！
     </view>
     <view class="jd_order_submit"   bindtap="linkDoctor">
-        联系医生
+        联系客服
     </view>
 </view>
