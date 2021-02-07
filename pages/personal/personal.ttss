@@ -6,7 +6,8 @@
 /*tab*/
 /*单一订单样式-start*/
 .order_list{padding-bottom: 150rpx;}
-.jd_order_item{height:390rpx;width:100%;margin-bottom:30rpx;background:#fff}
+.jd_order_item{height:390rpx;width:100%;margin-bottom:30rpx;background: #ffffff
+}
 .jd_order_item .order-id{width:100%;height:69rpx;display:flex;flex-direction:row;align-items:center;justify-content:space-between}
 .jd_order_item .order-id .id-num{font-size:24rpx;font-family:SourceHanSansCN;font-weight:400;color:#666666;margin-left:30rpx}
 .jd_order_item .order-id .order-state{font-size:24rpx;font-family:SourceHanSansCN;font-weight:400;color:#ef653a;margin-right:29rpx}
